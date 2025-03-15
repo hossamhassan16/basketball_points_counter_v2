@@ -1,8 +1,10 @@
 import 'package:basketball_points_counter_app_v2/core/utils/styles.dart';
+import 'package:basketball_points_counter_app_v2/cubits/cubit/counter_cubit.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
-class InfoRow extends StatelessWidget {
-  const InfoRow({
+class InfoRaw extends StatelessWidget {
+  const InfoRaw({
     super.key,
   });
 
@@ -16,7 +18,7 @@ class InfoRow extends StatelessWidget {
           height: 60,
         ),
         Text(
-          "0",
+          "${BlocProvider.of<CounterCubit>(context).teamApoints}",
           style: style32,
         ),
         Column(
@@ -32,7 +34,7 @@ class InfoRow extends StatelessWidget {
           ],
         ),
         Text(
-          "0",
+          "${BlocProvider.of<CounterCubit>(context).teamBpoints}",
           style: style32,
         ),
         Image.asset(

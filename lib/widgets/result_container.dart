@@ -16,17 +16,26 @@ class ResultContainer extends StatelessWidget {
       ),
       child: Padding(
         padding: const EdgeInsets.only(top: 32),
-        child: Column(
-          children: [
-            Text(
-              "Game score",
-              style: style18,
+        child: Container(
+          width: double.infinity,
+          decoration: BoxDecoration(
+            color: Color(0xff0B00B3),
+          ),
+          child: Padding(
+            padding: const EdgeInsets.only(top: 32),
+            child: Column(
+              children: [
+                Text(
+                  "Game score",
+                  style: style18,
+                ),
+                SizedBox(
+                  height: 25,
+                ),
+                InfoRaw(),
+              ],
             ),
-            SizedBox(
-              height: 25,
-            ),
-            InfoRow()
-          ],
+          ),
         ),
       ),
     );
