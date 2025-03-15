@@ -10,3 +10,4 @@ var style18 = const TextStyle(
   fontSize: 18,
   decoration: TextDecoration.none,
 );
+var primaryColor = Color(0xff0B00B3);
