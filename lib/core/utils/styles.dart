@@ -11,3 +11,4 @@ var style18 = const TextStyle(
   decoration: TextDecoration.none,
 );
 var primaryColor = Color(0xff0B00B3);
+var seconderyColor = Colors.red;

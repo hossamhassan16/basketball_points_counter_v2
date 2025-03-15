@@ -1,27 +1,23 @@
 import 'package:basketball_points_counter_app_v2/core/utils/styles.dart';
 import 'package:flutter/material.dart';
 
-class CustomButton extends StatelessWidget {
-  const CustomButton({
+class ResetButtons extends StatelessWidget {
+  const ResetButtons({
     super.key,
-    required this.buttonTitle,
-    required this.color,
   });
-  final String buttonTitle;
-  final Color color;
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 130,
-      height: 40,
+      width: 200,
+      height: 50,
       decoration: BoxDecoration(
-        color: color,
+        color: Colors.grey,
         borderRadius: BorderRadius.circular(16),
       ),
       child: Center(
         child: Text(
-          buttonTitle,
+          "RESET",
           style: style18,
         ),
       ),
